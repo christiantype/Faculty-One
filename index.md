@@ -6,5 +6,7 @@ layout: home
 ---
 
 
-<h1> Hello </h1>
-<h2>Bye</h2>
+<h1> WELCOME </h1>
+<p>
+    Something new is coming. A print publication dedicated to reversing the syntax of visual medium.
+</p>
