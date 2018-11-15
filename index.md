@@ -6,7 +6,11 @@ layout: home
 ---
 
 
-<h1> WELCOME </h1>
-<p>
-    Something new is coming. A print publication dedicated to reversing the syntax of visual medium.
-</p>
+<center> <span class="intro-text"> Something, </span> 
+
+<h1>for all and none.</h1>
+<h2>2019</h2>
+</center>
+<img src="../assets/intro-image.png">
+
+<!-- <hr> -->
