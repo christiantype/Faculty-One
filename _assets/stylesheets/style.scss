@@ -512,7 +512,8 @@ ul {
 
 .title-xl {
   line-height: 1em;
-  font-family: $font-family-sans;
+  font-weight:600;
+  font-family: $font-family-serif;
   margin: 3em 0 2em 0;
   letter-spacing: -2px;
   text-align: center;
@@ -533,6 +534,9 @@ ul {
   }
 }
 
+.sans {
+  font-family: $font-family-sans;
+}
 
 
 
