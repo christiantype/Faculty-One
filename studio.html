@@ -1,0 +1,30 @@
+---
+layout: studio
+title: "What Faculty does"
+description: "Faculty is an independent design practice based in Chicago. Faculty challenges the syntax of design through mindful executions that encourage diversity of thought and promote a better world."
+intro: "Faculty is an independent design practice based in Chicago. Faculty challenges the syntax of design through mindful executions that encourage diversity of thought and promote a better world."
+
+---
+{% for post in site.tags.project %}
+
+
+
+<ul class="article-list">
+
+
+    <li class="article-list-item">
+        <img src="{{ site.baseurl }}../{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
+        <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><span class="introtext">{{ post.title }}</span></a>
+
+        <div class="article-list-footer">
+            <span class="article-list-date">{{ post.category }}</span>
+        </div>
+    </li>
+
+</ul>
+
+
+    {% endfor %}
+
+
+

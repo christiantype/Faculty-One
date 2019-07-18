@@ -1,0 +1,31 @@
+---
+layout: portfolio
+title: "Christian Solorzano | Online Portfolio"
+description: "Faculty is an independent design practice based in Chicago. Faculty challenges the syntax of design through mindful executions that encourage diversity of thought and promote a better world."
+---
+{% for post in site.tags.project %}
+
+
+
+<ul class="article-list">
+    <li class="article-list-item">
+        <div class="article-image">
+            <img src="{{ site.baseurl }}../{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
+        </div>
+        <div class="article-title">
+    <span class="title-xl">
+    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </span>
+            <div class="article-list-footer">
+                <h4>{{ post.date | date: "%B %-d, %Y" }}</h4>
+            </div>
+        </div>
+
+
+    </li>
+
+</ul>
+{% endfor %}
+
+
+

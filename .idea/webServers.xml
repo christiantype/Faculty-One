@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e4ae1b28-9903-4dd2-9961-006bcaf7930f" name="Faculty" url="http://thewall.asoshared.com">
+        <fileTransfer host="thewall.asoshared.com" port="21" rootFolder="/public_html" password="dfe9dfc7dfd9df98df9ddf9bdf9edf9cdf8b" username="facultyo">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

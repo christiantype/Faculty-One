@@ -1,0 +1,37 @@
+---
+layout: default
+title: "Christian Solorzano | Online Portfolio"
+description: "Christian Solorzano is a Chicago multidisciplinary designer—he creates products, experiences, and brands."
+---
+{% for post in site.tags.personal %}
+
+
+
+<ul class="article-list reveal">
+    <li class="article-list-item">
+        <span class="article-header">
+            <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+             <!--   <div class="article-image">
+                    <img src="{{ site.baseurl }}../{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
+                </div> -->
+                    <h1>{{ post.title }}</h1>
+                    <div class="article-list-footer">
+                        <h4>
+                            {{ post.date | date: "%-m/%-d/%Y" }} |
+                            {% capture words %}
+                            {{ post.content | number_of_words }}
+                            {% endcapture %}
+                            {% unless words contains "-" %}
+                            {{ words | plus: 250 | divided_by: 250 | append: " minute read" }} |
+                            by {{ post.author }}
+                            {% endunless %}
+
+
+                        </h4>
+
+                    </div>
+            </a>
+        </span>
+    </li>
+</ul>
+{% endfor %}
