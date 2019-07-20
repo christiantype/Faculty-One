@@ -43,7 +43,7 @@ $max-width: em(70.5em) !default;
 /* =============== VARIABLES =============== */
 
 
-$backgroundc: #ffffea;
+$backgroundc: #feffef;
 $lightcolor: #000000;
 $midcolor: #ff030a;
 $maincolor: #000000;
@@ -918,10 +918,13 @@ h2 {
 
 h3 {
   font-family: $font-family-serif;
-  font-size: ms(2);
+  font-size: ms(1);
   font-weight: 300;
   margin-top: 1em;
   color:$midcolor;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
 
 }
 
@@ -933,6 +936,9 @@ h4{
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $accent;
+  -ms-transform: skewY(-2deg); /* IE 9 */
+  -webkit-transform: skewY(-2deg); /* Safari 3-8 */
+  transform: skewY(-2deg);
 
 }
 
@@ -977,7 +983,6 @@ h4{
   font-weight: 600;
   padding: 0;
   margin-bottom: 1.25em;
-  border-bottom: .5px solid $lightcolor;
 
 }
 
@@ -1102,4 +1107,25 @@ h6 {
   font-family: $font-family-serif;
 
 
+}
+
+//// PORTFOLIO LIST /////
+
+.portfolio-list {
+  @include span-columns(12);
+  list-style: none;
+
+}
+
+.work-title {
+  color:$accent1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // transform: translate(-50%, -50%);
+  @include ms-respond(font-size,2);
+  text-align: center;
+  background: $maincolor;
+  padding:1em;
+  font-family: $font-family-sans;
 }

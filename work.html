@@ -7,24 +7,21 @@ description: "Faculty is an independent design practice based in Chicago. Facult
 
 
 
-<ul class="article-list">
-    <li class="article-list-item">
-        <div class="article-image">
-            <img src="{{ site.baseurl }}../{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
-        </div>
-        <div class="article-title">
-    <span class="title-xl">
-    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </span>
-            <div class="article-list-footer">
-                <h4>{{ post.date | date: "%B %-d, %Y" }}</h4>
-            </div>
-        </div>
 
+<ul class="portfolio-list">
+    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+        <li class="portfolio-list-item reveal">
+            <img class="work" src="{{ site.baseurl }}../{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
+                <span class="work-title">
+                    {{ post.title }} <br>
+                    {{ post.date | date: "%Y" }}
+                </span>
 
-    </li>
+        </li>
+    </a>
 
 </ul>
+
 {% endfor %}
 
 
