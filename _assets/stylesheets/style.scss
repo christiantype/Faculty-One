@@ -46,7 +46,7 @@ $max-width: em(70.5em) !default;
 $backgroundc: #fafafa;
 $lightcolor: #000000;
 $maincolor: #171717;
-$accent: #0d00ff;
+$accent: #ff0017;
 $accent1: #a9a9a9;
 $midcolor: #525252;
 $max-width: em(400);
@@ -574,9 +574,13 @@ ul {
 
 //// COLUMNS ////
 
-main img {
+.workimages img {
   width:100%;
   margin: 2em 0 1em 0;
+}
+
+.work img {
+  margin-top:0px;
 }
 
 .right {
@@ -1115,7 +1119,7 @@ h6 {
   list-style: none;
   text-align: left;
   margin-right:0em;
-  padding-right: 1em;
+  padding-right: .25em;
   @include media($grid) { // As defined in _grid-settings.scss
     @include span-columns(12);
 
@@ -1124,16 +1128,18 @@ h6 {
 }
 
 .portfolio-list img {
-  margin-bottom: 0;
+  width:100%;
+  margin: 0 0 1em 0;
 }
 
 .work-title {
   position: relative;
-  top:-1em;
+  padding:.25em;
+  top:-4em;
   // transform: translate(-50%, -50%);
-  font-size:ms(2);
-  text-align: center;
-  background: $backgroundc;
+  font-size:ms(0);
+  text-align: left;
+  background: $maincolor;
   font-family: $font-family-body;
   -webkit-animation: color-change 5s infinite;
   -moz-animation: color-change 5s infinite;

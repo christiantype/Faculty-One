@@ -1,7 +1,7 @@
 # Mandatory settings
 
 baseurl: 
-name: Faculty | For All & None
+name: Faculty
 paginate: 1
 paginate_path: "posts/page/:num/"
 url: http://faculty.one
@@ -61,7 +61,6 @@ exclude:
   - README.md
   - vendor/
 plugins:
-  - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
   - bourbon
